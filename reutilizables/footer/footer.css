@@ -1,0 +1,65 @@
+*{box-sizing: border-box}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins&display=swap');
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    min-height: 375px;
+    justify-content:center;
+    align-items: center;
+    background-color: #2C2C2C;
+}       
+@media (min-width:960px){
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4%;
+    }
+}
+.footer__redes{
+    display: grid;
+    justify-items: end;
+    
+}
+.footer__h2{
+    width: 197px;
+    height: 48px;
+
+
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    
+    
+    letter-spacing: -1px;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+
+.footer__links{
+    max-width: 105px;
+    height: 29px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DBDBDB;
+    margin: 0 0 19px 0;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 7px;
+
+
+}
+.footer__img  {
+    max-width: 29px;
+}

@@ -57,9 +57,14 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 7px;
-    justify-content: right
+    justify-content: center
 
 
+}
+@media (min-width:960px){
+    .footer__links{
+        justify-content: right;
+    }
 }
 .footer__img  {
     max-width: 29px;

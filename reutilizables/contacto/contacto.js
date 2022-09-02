@@ -1,5 +1,3 @@
-var el = document.querySelector("div");
-
 function importContactComponent() {
   let component = document.createElement("div");
   component.innerHTML = `<section class="contacto">
@@ -24,4 +22,3 @@ function importContactComponent() {
 </section>`;
   return component;
 }
-el.appendChild(importContactComponent());

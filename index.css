@@ -138,7 +138,7 @@ body {
     background-color: #FFFFFF;
 }
 @media(min-width:960px) {
-    .separador-momentaneo{display: none;}
+    .separador-momentaneo{display: none;}}
 
 .presentacion__img {
     display: none;
@@ -148,6 +148,6 @@ body {
 
 @media(min-width:960px) {
     .presentacion__img {
-        display: initial;
+        display: inherit;
     }
 }

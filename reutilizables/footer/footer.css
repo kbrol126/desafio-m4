@@ -57,6 +57,7 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 7px;
+    justify-content: right
 
 
 }

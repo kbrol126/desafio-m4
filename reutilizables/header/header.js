@@ -1,20 +1,3 @@
-(function main() {
-  let botonEl = document.querySelectorAll(".header__button-hamburger");
-  let ventanaEl = document.querySelector(".header__nav__ventana");
-
-  botonEl[0].addEventListener("click", () => {
-    ventanaEl.style.display = "flex";
-  });
-
-  botonEl[1].addEventListener("click", () => {
-    ventanaEl.style.display = "flex";
-  });
-
-  botonEl[2].addEventListener("click", () => {
-    ventanaEl.style.display = "flex";
-  });
-});
-
 function importHeaderComponent() {
   let component = document.createElement("div");
   component.innerHTML = `  <header class="header">
@@ -40,7 +23,7 @@ function importHeaderComponent() {
   </nav>
   <div class="header__nav__ventana">
   <div class="header__nav__ventana__close">
-  <a href="./header.html"><button class="header__nav__ventana__close--button " >
+  <a href="./index.html"><button class="header__nav__ventana__close--button " >
   X
   </button>        </a>
   </div>

@@ -16,3 +16,10 @@ botonEl[1].addEventListener("click", () => {
 botonEl[2].addEventListener("click", () => {
   ventanaEl.style.display = "flex";
 });
+
+fetch(
+  "https://cdn.contentful.com/spaces/7dmr0uwu807a/environments/master/entries?access_token=psrVG_69pbSZ7C7d7jtQzABmYvEzQYILehhustser-w",
+  (r) => {
+    return r;
+  }
+).then((r) => console.log(r));

@@ -121,8 +121,8 @@ body {
 }
 @media(min-width:960px) {
     .presentacion__container__p{
-        max-width: 610px;
-        height: 215.13px;
+        max-width: 538px;
+        max-height: 215.13px;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@700&family=Poppins:wght@400;700&display=swap');
+
+
+*{box-sizing: border-box;
+    }
+
+body{margin:0
+}
+
+.container__header{
+   
+    min-height: 654px;
+    background: linear-gradient(107.17deg, #958C40 29.35%, rgba(156, 0, 210, 0.8) 78.73%);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    
+
+}
+.porfolio__header__h3{
+    max-width: 524px;
+    min-height: 48px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    padding-left: 6%;
+    position: absolute;
+    top: 40%;
+   
+
+}
+.container-porfolio{
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    background-color: #000000;
+    padding: 5%;
+;
+}
+.portfolio{
+    margin: 0 auto 100px auto;
+    max-width: 500px;
+    display: grid;
+    gap: 10px;
+    text-align: center;
+  
+
+
+
+
+}
+.title{
+    margin: 0 auto;
+    max-width: 313px;
+    max-height: 48px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+
+
+    
+
+}
+
+.contenedor{
+    display: flex;
+    gap: 44px;
+}
+@media (max-width: 959px){
+    .contenedor{display: grid;}
+}
+.card{
+    max-width: 374px;
+     display:grid;
+    justify-items: center;
+}
+.img-card{
+
+    max-width: 270px;
+    max-height: 172.97px;
+    margin: 0;
+}
+.descripcion{
+    
+    display: grid;
+    gap: 10px;
+    max-width: 1fr;
+    
+    margin-top: 20px;
+
+}
+.title-card{
+    margin: 0 auto;
+    min-width: 301px;
+    min-height: 39.41px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #DBDBDB;
+   
+}
+.p-card{
+    margin: 0 auto;
+    min-width: 262px;
+    min-height: 125.89px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #DBDBDB;
+    text-align: justify;
+    
+    
+}
+.link{
+    text-decoration-line: underline;
+    min-width: 262px;
+    min-height: 33px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FC6F50;
+}

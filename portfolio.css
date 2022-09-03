@@ -11,12 +11,14 @@ body{margin:0
    
     min-height: 654px;
     background: linear-gradient(107.17deg, #958C40 29.35%, rgba(156, 0, 210, 0.8) 78.73%);
-    display: flex;
     flex-direction: column;
     margin: 0 auto;
     position: relative;
-    
+    display: none;
 
+}
+@media (min-width:960px){
+    .container__header{display: flex;}
 }
 .porfolio__header__h3{
     max-width: 524px;

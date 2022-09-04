@@ -1,6 +1,6 @@
-function importContactComponent() {
+function importFormComponent() {
   let component = document.createElement("div");
-  component.innerHTML = `<section class="contacto">
+  component.innerHTML = `<section class="contactos">
   <h3 class="contacto__title">Escribime</h3>
   <form class="contacto__form">
   <label class="contacto__form__label" for="">

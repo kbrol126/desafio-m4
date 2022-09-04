@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap');
 *{box-sizing: border-box;}
 body{margin:0}
-.contacto{
+.contactos{
     width: 100%;
     min-height: 660px;
     display: flex;
@@ -11,7 +11,7 @@ body{margin:0}
    
 }   
 @media (min-width:960px){
-    .contacto{
+    .contactos{
         padding: 3%;
         display: grid;
         grid-template-columns: auto auto ;

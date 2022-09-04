@@ -2,8 +2,9 @@ let footerEl = document.querySelector("footer");
 footerEl.appendChild(importFooterComponent());
 let headerEl = document.querySelector("header");
 headerEl.appendChild(importHeaderComponent());
+let contenfulEl = document.querySelector(".contenful");
 
-function mostrarResultados(resultados) {
+function mostrarResultados1(resultados) {
   let contador = 0;
   const contenedor = document.querySelector(".contenedor");
   const template = document.querySelector("#cards");
@@ -22,14 +23,14 @@ function mostrarResultados(resultados) {
     const clonar = document.importNode(template.content, true);
     contenedor.appendChild(clonar);
   }
+  footerEl.appendChild(importContenfulComponent());
 }
-
 function main() {
   fetch(
     "https://cdn.contentful.com/spaces/7dmr0uwu807a/environments/master/entries?access_token=psrVG_69pbSZ7C7d7jtQzABmYvEzQYILehhustser-w"
   )
     .then((response) => response.json())
-    .then((data) => mostrarResultados(data));
+    .then((data) => mostrarResultados1(data));
 }
 
 main();

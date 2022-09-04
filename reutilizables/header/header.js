@@ -3,13 +3,13 @@ function importHeaderComponent() {
   component.innerHTML = `  <header class="header">
     <h4 class="header__logo">NAHUE</h4>
     <nav class="header__nav--desktop">
-    <a href="/portfolio.html"><button class="header__button-hamburger--desktop" >
+    <a href="/Page/portfolio/portfolio.html"><button class="header__button-hamburger--desktop" >
     Portfolio
     </button></a>            
-    <a href="/servicios.html"><button class="header__button-hamburger--desktop" >
+    <a href="/Page/servicios/servicios.html"><button class="header__button-hamburger--desktop" >
   Servicios
   </button> </a>          
-  <a href="/formularioDeContacto.html"><button class="header__button-hamburger--desktop" >
+  <a href="/Page/contacto/contacto.html"><button class="header__button-hamburger--desktop" >
   Contacto
   </button></a>
   </nav>
@@ -28,13 +28,13 @@ function importHeaderComponent() {
   </button>        </a>
   </div>
   <div class="header__nav_ventana_dropdown-menu">
-  <a href="/portfolio.html"><button class="header__dropdown-menu__button" >
+  <a href="/Page/portfolio/portfolio.html"><button class="header__dropdown-menu__button" >
   Portfolio
   </button>            </a>
-  <a href="/servicios.html"><button class="header__dropdown-menu__button" >
+  <a href="/Page/servicios/servicios.html"><button class="header__dropdown-menu__button" >
   Servicios
   </button>           </a>
-  <a href="/formularioDeContacto.html"><button class="header__dropdown-menu__button" >
+  <a href="/Page/contacto/contacto.html"><button class="header__dropdown-menu__button" >
   Contacto
   </button></a>
   </div>

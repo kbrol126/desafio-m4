@@ -4,7 +4,7 @@ function importHeaderComponent() {
     <h4 class="header__logo">NAHUE</h4>
     <nav class="header__nav--desktop">
     <a href="/portfolio.html"><button class="header__button-hamburger--desktop" >
-    Porfolio
+    Portfolio
     </button></a>            
     <a href="/servicios.html"><button class="header__button-hamburger--desktop" >
   Servicios
@@ -29,7 +29,7 @@ function importHeaderComponent() {
   </div>
   <div class="header__nav_ventana_dropdown-menu">
   <a href="/portfolio.html"><button class="header__dropdown-menu__button" >
-  Porfolio
+  Portfolio
   </button>            </a>
   <a href="/servicios.html"><button class="header__dropdown-menu__button" >
   Servicios

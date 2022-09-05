@@ -2,8 +2,9 @@ let footerEl = document.querySelector("footer");
 footerEl.appendChild(importFooterComponent());
 let headerEl = document.querySelector("header");
 headerEl.appendChild(importHeaderComponent());
+let contenfulEl = document.querySelector(".contenful");
 
-function mostrarResultados(resultados) {
+function mostrarResultados1(resultados) {
   let contador = 0;
   const contenedor = document.querySelector(".contenedor");
   const template = document.querySelector("#cards");
@@ -21,13 +22,25 @@ function mostrarResultados(resultados) {
     contenedor.appendChild(clonar);
   }
 }
-
 function main() {
   fetch(
     "https://cdn.contentful.com/spaces/7dmr0uwu807a/environments/master/entries?access_token=psrVG_69pbSZ7C7d7jtQzABmYvEzQYILehhustser-w"
   )
     .then((response) => response.json())
-    .then((data) => mostrarResultados(data));
+    .then((data) => mostrarResultados1(data));
+
+  var botonEl = document.querySelectorAll(".header__button-hamburger");
+  var ventanaEl = document.querySelector(".header__nav__ventana");
+
+  botonEl[0].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
+  botonEl[1].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
+  botonEl[2].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
 }
 
 main();

@@ -23,7 +23,6 @@ function mostrarResultados1(resultados) {
     const clonar = document.importNode(template.content, true);
     contenedor.appendChild(clonar);
   }
-  footerEl.appendChild(importContenfulComponent());
 }
 function main() {
   fetch(
@@ -31,6 +30,18 @@ function main() {
   )
     .then((response) => response.json())
     .then((data) => mostrarResultados1(data));
+  var botonEl = document.querySelectorAll(".header__button-hamburger");
+  var ventanaEl = document.querySelector(".header__nav__ventana");
+
+  botonEl[0].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
+  botonEl[1].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
+  botonEl[2].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
 }
 
 main();

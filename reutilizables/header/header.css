@@ -122,10 +122,9 @@ color: #FFFFFF;
 
 
 }
-/* cambiar display a flex */
 .header__nav__ventana{
     display: none;
-    position:absolute;
+    position:fixed;
     background-color: black;
     top: 0;
     right: 0;

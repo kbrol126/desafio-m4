@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap');
 *{box-sizing: border-box;}
 body{margin:0}
+.contenedor-contacto-home{
+    background-color: black;
+}
 .contactos{
     width: 100%;
     min-height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #141414;
+    background-color: transparent;
    
 }   
 @media (min-width:960px){

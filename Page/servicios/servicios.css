@@ -48,13 +48,15 @@ top: 40%;
 
 }
 @media (min-width:960px){
-.servicios__header__h3{display: initial;}}
+.servicios__header__h3{
+    display: initial;}
+}
 .container-servicios{
 display: grid;
 justify-content: center;
 margin: 0;
 background-color: #000000;
-padding: 5%;
+
 ;
 }.servicios{
 margin: 46px auto 100px auto;

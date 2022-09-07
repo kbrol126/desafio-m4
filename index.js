@@ -1,10 +1,23 @@
 function main() {
-  let footerEl = document.querySelector("footer");
-  footerEl.appendChild(importFooterComponent());
-  let headerEl = document.querySelector("header");
+  var headerEl = document.querySelector(".container__home__header");
   headerEl.appendChild(importHeaderComponent());
-  let contenfulEl = document.querySelector(".contenful");
+  var formEl = document.querySelector(".form-section");
+  formEl.appendChild(importFormComponent());
+  var footerEl = document.querySelector(".footer-section");
+  footerEl.appendChild(importFooterComponent());
 
+  var botonEl = document.querySelectorAll(".header__button-hamburger");
+  var ventanaEl = document.querySelector(".header__nav__ventana");
+
+  botonEl[0].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
+  botonEl[1].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
+  botonEl[2].addEventListener("click", () => {
+    ventanaEl.style.display = "flex";
+  });
   function mostrarResultados(resultados) {
     let contador = 0;
     const contenedor = document.querySelector(".contenedor");
@@ -34,19 +47,5 @@ function main() {
   )
     .then((response) => response.json())
     .then((data) => mostrarResultados(data));
-
-  var botonEl = document.querySelectorAll(".header__button-hamburger");
-  var ventanaEl = document.querySelector(".header__nav__ventana");
-
-  botonEl[0].addEventListener("click", () => {
-    ventanaEl.style.display = "flex";
-  });
-  botonEl[1].addEventListener("click", () => {
-    ventanaEl.style.display = "flex";
-  });
-  botonEl[2].addEventListener("click", () => {
-    ventanaEl.style.display = "flex";
-  });
 }
-
 main();

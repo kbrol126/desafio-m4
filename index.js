@@ -1,14 +1,17 @@
 function main() {
+  //busco el elemento al que le quiero pegar//
   var headerEl = document.querySelector(".container__home__header");
+  //ya con el elemento elegido, importo la funcion que trae todos los elementos reutilizables y los agrego con el appendChild al html//
   headerEl.appendChild(importHeaderComponent());
   var formEl = document.querySelector(".form-section");
   formEl.appendChild(importFormComponent());
   var footerEl = document.querySelector(".footer-section");
   footerEl.appendChild(importFooterComponent());
-
+  //una vez que esta creado el elemento ,busco el boton al que le quiero pegar, como elegi el querySelectorAll me devuelve todos los elementos que se llaman igual, se que tiene 3 posiciones asi que las itero mas adelante//
   var botonEl = document.querySelectorAll(".header__button-hamburger");
+  //seleciono el elemento ventana el cual tiene el display NONE//
   var ventanaEl = document.querySelector(".header__nav__ventana");
-
+  //escucho todos los eventos click de los elementos botonEL, cuando se hace click la ventana pasa a tener un display FLEX , que la hace visible
   botonEl[0].addEventListener("click", () => {
     ventanaEl.style.display = "flex";
   });
@@ -18,6 +21,19 @@ function main() {
   botonEl[2].addEventListener("click", () => {
     ventanaEl.style.display = "flex";
   });
+  //escucho el evento del formulario "submit", paro lo que hace por defecto y devuelvo un objeto con los valores que necesito//
+  formEl.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let formulario = event.target;
+    var elemento = {
+      name: formulario.nombreDelContacto.value,
+      to: formulario.emailDelContacto.value,
+      message: formulario.mensajeDelContacto.value,
+    };
+    console.log(elemento);
+  });
+
   function mostrarResultados(resultados) {
     let contador = 0;
     const contenedor = document.querySelector(".contenedor");

@@ -23,8 +23,8 @@ function importHeaderComponent() {
   </nav>
   <div class="header__nav__ventana">
   <div class="header__nav__ventana__close">
-  <a href="./index.html"><button class="header__nav__ventana__close--button " >
-  X
+  <a href="/index.html"><button class="header__nav__ventana__close--button " >
+  
   </button>        </a>
   </div>
   <div class="header__nav_ventana_dropdown-menu">

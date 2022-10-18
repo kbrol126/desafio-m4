@@ -1,7 +1,8 @@
 function importHeaderComponent() {
   let component = document.createElement("div");
   component.innerHTML = `  <header class="header">
-    <h4 class="header__logo">NAHUE</h4>
+  <a href="/index.html" class="link__logo"><h4 class="header__logo" >NAHUE</h4></a>  
+
     <nav class="header__nav--desktop">
     <a href="/Page/portfolio/portfolio.html"><button class="header__button-hamburger--desktop" >
     Portfolio

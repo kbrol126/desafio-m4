@@ -22,3 +22,22 @@ function importFormComponent() {
 </section>`;
   return component;
 }
+const contactoEl = document.querySelector(".contacto__form");
+function postForm(contactoEl) {
+  contactoEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(contactoEl);
+    const formEntries = Object.fromEntries(formData.entries());
+    console.log(formEntries);
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        to: "nahuel.cabral@hotmail.com",
+        message: `Nombre: ${formEntries.name}, Email: ${formEntries.email}, Mensaje: ${formEntries.message}`,
+      }),
+    }).then((data) => data.json());
+
+    formEl.reset();
+  });
+}

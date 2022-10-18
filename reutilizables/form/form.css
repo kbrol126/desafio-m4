@@ -2,7 +2,7 @@
 *{box-sizing: border-box;}
 body{margin:0}
 .contenedor-contacto-home{
-    background-color: black;
+    background: linear-gradient(107.17deg, #241c1c 29.35%, rgba(6, 36, 36, 0.8) 60.73%);
 }
 .contactos{
     width: 100%;

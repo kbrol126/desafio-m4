@@ -20,7 +20,7 @@ body{margin:0
 @media (min-width:960px){
     .container__header{display: flex;
         min-height: 654px;
-        background: linear-gradient(107.17deg, #958C40 29.35%, rgba(156, 0, 210, 0.8) 78.73%);}
+        background: linear-gradient(107.17deg, #292626 29.35%, rgba(68, 48, 112, 0.8) 60.73%);}
 }
 .portfolio__header{
     background-color: #000000;
@@ -46,6 +46,10 @@ body{margin:0
     top: 40%;
    
 
+}
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 @media (min-width:960px){
     .portfolio__header__h3{display: initial;}}
@@ -111,6 +115,7 @@ body{margin:0
     border: solid black;
    justify-items: center;
 }
+
 .img-card{
 
     max-width: 257px;

@@ -4,13 +4,13 @@ function importHeaderComponent() {
   <a href="/index.html" class="link__logo"><h4 class="header__logo" >NAHUE</h4></a>  
 
     <nav class="header__nav--desktop">
-    <a href="./pages/portfolio/index.html"><button class="header__button-hamburger--desktop" >
+    <a href="./portfolio/index.html"><button class="header__button-hamburger--desktop" >
     Portfolio
     </button></a>            
-    <a href="./pages/servicios/index.html"><button class="header__button-hamburger--desktop" >
+    <a href="./servicios/index.html"><button class="header__button-hamburger--desktop" >
   Servicios
   </button> </a>          
-  <a href="./pages/contacto/index.html"><button class="header__button-hamburger--desktop" >
+  <a href="./contacto/index.html"><button class="header__button-hamburger--desktop" >
   Contacto
   </button></a>
   </nav>
@@ -29,13 +29,13 @@ function importHeaderComponent() {
   </button>        </a>
   </div>
   <div class="header__nav_ventana_dropdown-menu">
-  <a href="./pages/portfolio/index.html"><button class="header__dropdown-menu__button" >
+  <a href="./portfolio/index.html"><button class="header__dropdown-menu__button" >
   Portfolio
   </button>            </a>
-  <a href="./pages/servicios/index.html"><button class="header__dropdown-menu__button" >
+  <a href="./servicios/index.html"><button class="header__dropdown-menu__button" >
   Servicios
   </button>           </a>
-  <a href="./pages/contacto/index.html"><button class="header__dropdown-menu__button" >
+  <a href="./contacto/index.html"><button class="header__dropdown-menu__button" >
   Contacto
   </button></a>
   </div>

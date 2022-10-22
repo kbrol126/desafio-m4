@@ -22,18 +22,6 @@ function main() {
     ventanaEl.style.display = "flex";
   });
   //escucho el evento del formulario "submit", paro lo que hace por defecto y devuelvo un objeto con los valores que necesito//
-  formEl.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    let formulario = event.target;
-    var elemento = {
-      name: formulario.nombreDelContacto.value,
-      to: formulario.emailDelContacto.value,
-      message: formulario.mensajeDelContacto.value,
-    };
-    console.log(elemento);
-  });
-
   function mostrarResultados(resultados) {
     let contador = 0;
     const contenedor = document.querySelector(".contenedor");
@@ -57,6 +45,28 @@ function main() {
       }
     }
   }
+  const contactoEl = document.querySelector(".contacto__form");
+  contactoEl.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let formulario = event.target;
+    var elemento = {
+      name: formulario.nombreDelContacto.value,
+      to: formulario.emailDelContacto.value,
+      message: formulario.mensajeDelContacto.value,
+    };
+
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        to: "nahuel.cabral@hotmail.com",
+        message: `Nombre: ${elemento.name}, Email: ${elemento.to}, Mensaje: ${elemento.message}`,
+      }),
+    }).then((data) => data.json());
+
+    formEl.reset();
+  });
 
   fetch(
     "https://cdn.contentful.com/spaces/7dmr0uwu807a/environments/master/entries?access_token=psrVG_69pbSZ7C7d7jtQzABmYvEzQYILehhustser-w"

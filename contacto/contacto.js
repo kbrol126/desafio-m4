@@ -41,7 +41,7 @@ function main() {
     }).then((data) => data.json());
     //resutaura los valores por defecto del form
 
-    formEl.reset();
+    contactoEl.reset();
   });
 }
 

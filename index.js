@@ -65,7 +65,7 @@ function main() {
       }),
     }).then((data) => data.json());
 
-    formEl.reset();
+    contactoEl.reset();
   });
 
   fetch(
